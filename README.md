@@ -5,7 +5,7 @@ AAtree
 
 問題の詳細はこちら http://gonshi.net/post/47849836250/aa
 
-1. プログラム概要
+【プログラム概要】
 
 本プログラムはJavaで記述されており、dictiとtlliの2つのクラスで構成される。
 
@@ -15,8 +15,7 @@ AAtree
 
 DICTIの関数set_entryとfind_entryはTLLIを用いて実装されている。つまり、クラスdictiの関数set_entryとfind_entryはクラスtlliの関数(技術ドキュメントに記載されているTLLIの関数8つ)を呼び出すことでTrianyへのアクセスを行う。
 
-
-2. Trianyのデータ構造
+【Trianyのデータ構造】
 
 本プログラムでは、Trianyを用いたデータ構造として平衡2分探索木の1つであるAA木を採用した。その理由として以下が挙げられる。
 
@@ -41,7 +40,7 @@ DICTIの関数set_entryとfind_entryはTLLIを用いて実装されている。�
 AA木における木の回転については、「Algorithms with Python / AA 木 (Arne Andersson tree) http://www.geocities.jp/m_hiroi/light/pyalgo53.html」と「木の回転 - Wikipedia http://ja.wikipedia.org/wiki/%E6%9C%A8%E3%81%AE%E5%9B%9E%E8%BB%A2」を参考とした。
 
 
-3. その他
+【その他】
 
 本プログラムでは、平衡2分探索木の1つであるAA木を採用したことにより、挿入および検索の処理速度向上を図った。実際、技術ドキュメントに記載されているリスト構造で辞書を構成した場合と処理速度を比較した際、AA木の方が約1/9の実行時間で計算を終えることが確認できた(testdataを入力とした際)。
 
